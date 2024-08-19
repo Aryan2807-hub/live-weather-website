@@ -1,0 +1,115 @@
+/* Reset default styles */
+body, h1, h3, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background and font styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    transition: background 0.5s ease-in-out; /* Animation for background change */
+}
+
+/* Main container styling */
+main {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 350px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Search engine styling */
+.searchEngine {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+#searchbar {
+    padding: 10px 15px;
+    flex-grow: 1;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 16px;
+}
+
+#submit {
+    border-radius: 0 20px 20px 0;
+    border: none;
+    background-color: #ff7e67;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#searchicon {
+    height: 20px;
+    width: 20px;
+}
+
+#submit:hover {
+    background-color: #ff5e3a;
+}
+
+/* Weather icon styling */
+#WeatherIcon {
+    width: 100px;
+    height: 100px;
+    margin: 15px auto;
+}
+
+/* Temperature and place styling */
+#temperature {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+#place {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+/* Humidity and wind styling */
+.humid, .wind {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 20px 10px 10px;
+    text-align: center;
+}
+
+#humidIcon, #windIcon {
+    width: 50%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+#humidpercent, #windspeed {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Error message styling */
+#errorMSG {
+    color: #ff6b6b;
+    font-size: 16px;
+    margin-top: 20px;
+}
